@@ -1,137 +1,129 @@
+// let houseDirty = true
 
-// while(SOMETHING THAT COMES OUT TO TRUE OR FALSE) {
-
+// while(houseDirty) {
+//     alert("Pick something up!")
+//     houseDirty = false
 // }
 
+// let peopleAtHouse = prompt("How many people are at your house?")
+
+// for(let i = 0; i < peopleAtHouse; i++) {
+//     alert("Make a sandwich!")
+// }
+
+// While is good when you don't know how many times you're going to loop when you start
+// but you when to stop (or on the flip side when to keep going)
+
+// For loop is good when you know how many times when you start looping
+
+// The skill of reading code (walk through code like a computer would) is a foundational skill
 
 // i = 3
+// here's a cat, here's a cat, here's a cat, you have enough
 
-let i = 0
-while (i < 3) {
-    alert("Here's a cat!")
-    i++
-}
-alert("You have enough!")
-alert(i)
+// let i = 0
+// while(i < 3) {
+//     alert("Here's a cat!")
+//     i++
+// }
+// alert("You have enough!")
+// console.log(i)
 
-// for (let i = 0; i < NUMBEROFTIMESTOLOOP; i++) {
+// i = 3
+// here's a cat, here's a cat, here's a cat, you have enough
 
+// for(let i = 0; i < 3; i++) {
+//     alert("Here's a cat!")
+// }
+// alert("You have enough!")
+
+
+// total = 15 (0, 1, 3, 6, 10, 15)
+// i = 6
+// 1, 2, 3, 4, 5
+
+// let total = 0
+
+// for(let i = 1; i <= 5; i++) {
+//    total += i; // total = total + i
+//    console.log(total)
 // }
 
+// Should this line of code be in the loop or outside the loop?
 
-// i = 0
+//alert("The total is " + total)
 
-for (let i = 0; i < 3; i++) {
-    alert("Here's a cat!")
-    console.log(i) // 0 then 1 then 2
+
+function myFunction(parameter1, parameter2) {
+    console.log(parameter1)
 }
 
-alert("You have enough!")
+//console.log(parameter1) // ERROR
+
+let fruits = ["apple", "peach", "mango"]
+let prices = [1, 7, 3]
+
+
+// prices = [1, 7, 3]
+// prices.length = 3
+// total = 11
+// i = 3
+
+// let total = 0
+
+// for(let i = 0; i < prices.length; i++) {
+//     // i will be each index of the array one by one
+//     total += prices[i] // total = total + prices[i]
+// }
+
+// console.log("Your total is " + total)
 
 
 
 
-// total = 15
-// i = 6
-// console: 1, 2, 3, 4, 5
+// let total = 0
 
-let total = 0
+// for(let i = 0; i < prices.length; i++) {
+//     const price = prices[i] // first 1, then 7, then 3
+//     // i will be each index of the array one by one
+//     total += price// total = total + prices[i]
+// }
 
-let stopAt = prompt("What number should I stop at?")
+// console.log("Your total is " + total)
 
-for (let i = 1; i <= stopAt; i++) {
-    total += i; // total = total + i
-    console.log(i) // 1 then 2 then 3 then 4 then 5
+
+
+let sum = 0
+
+for (const price of prices) { // price will be 1, then 7, then 3
+    // In the background, it does this for you and tracks the i: const price = prices[i]
+    sum += price// total = total + price
 }
 
-alert("The total is " + total)
+console.log("Your total is " + sum)
 
 
-
-
-
-function fibonacciEvenNumbers(numberOfNumbers) {
-    let previousNumber = 0;
-    let currentNumber = 1;
-    let count = 0;
-    while (count < numberOfNumbers) {
-        if (previousNumber % 2 === 0) {
-            console.log(previousNumber);
-        }
-        let temp = previousNumber + currentNumber;
-        previousNumber = currentNumber;
-        currentNumber = temp;
-        count++;
-    }
-}
-
-
-
-
-
-
-function fibonacciIsNumberPartOf(numberToCheck) {
-    let a = 0;
-    let b = 1;
-    while (b <= numberToCheck) {
-        if (b === numberToCheck) {
-            alert("Yes!")
-            return
-        }
-        let temp = a + b;
-        a = b;
-        b = temp;
-    }
-    alert("No!")
+for (const price of prices) {
+    console.log(price)
 }
 
 
+let message = "You are buying: "
 
-
-// Global Variable = free spirit that exists everywhere, info available to all
-let number = 5
-// The name "Hitler" = ruined forever not a normal anymore
-// If you make a global variable that name is a little bit ruined forever
-// or a nicer metaphor, is invasive species
-// You know it's global if it's not inside any curly brackets or parenthesis of a function or loop
-
-
-
-// scope = programmy word for context
-// What defines the context? Curly brackets
-
-
-
-function sayHi(myName) {
-    let something = 3
-    let dsfdsfds = 3
-    return something
+for (const fruit of fruits) {
+    message += fruit + " and "
 }
 
-const mySpecialThing = sayHi("Natalie")
-
-// parameters and return are like little slots in and out of the scope of the function
+console.log(message)
 
 
+//const random = Math.floor( Math.random() * HOW_MANY_OPTIONS  ) + LOWEST_NUMBER
 
 
-let fruits = ["apple", "banana", "peach"]
-fruits[1] += " pepper" // fruits[1] = fruits[1] + " pepper" -----> fruits[1] = "banana pepper"
 
-fruits.push("strawberry")
-
-// This is not great
-let fruitToAdd = ""
-do {
-    fruitToAdd = prompt("What fruit do you want to add?")
-    fruits.push(fruitToAdd)
-} while(fruitToAdd !== "")
-
-fruits.length // tell you the current length of the array
-
-// Get the last fruit in the array
-fruits[fruits.length - 1]
+const addOne = (number) => {
+    number + 1
+}
 
 
-// splice = scissors and tape -> removes and adds things to the middle of a list
-// slice = photocopy machine -> makes a copy of some chunk of the array, like a slice of unlimited pizza
+addOne(5) // undefined
