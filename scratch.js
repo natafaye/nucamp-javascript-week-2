@@ -1,63 +1,63 @@
-// let numCats = prompt("How many cats do you have?") // "0"
+let numCats = prompt("How many cats do you have?") // "0"
 
-// // numCats = 0
-// // CONSOLE: 
+// numCats = 0
+// CONSOLE: 
 
-// console.log(numCats) // logs: "0"
+console.log(numCats) // logs: "0"
 
-// // The condition () will keep the loop looping while it's true
-// while(numCats < 3) {
-//     alert("That's so sad, you're not a cat lady")
-//     alert("Here's a cat")
-//     console.log(numCats) // log three times: 0, 1, 2
-//     numCats++ // numCats = numCats + 1
-//     console.log(numCats) // log three times: 1, 2, 3
-// }
+// The condition () will keep the loop looping while it's true
+while(numCats < 3) {
+    alert("That's so sad, you're not a cat lady")
+    alert("Here's a cat")
+    console.log(numCats) // log three times: 0, 1, 2
+    numCats++ // numCats = numCats + 1
+    console.log(numCats) // log three times: 1, 2, 3
+}
 
-// // How many cats?
-// console.log(numCats) // logs: 3
-
-
-// // guess = "pineapple"
-
-// let guess = ""
-
-// while(guess !== "pineapple") {
-//     guess = prompt("Guess!") // type in the prompt: "pineapple"
-// }
-
-// // If you're past the loop the loop condition must be false
-// // After the loop is almost like the "else" of a loop
-// alert("You guessed right!")
+// How many cats?
+console.log(numCats) // logs: 3
 
 
+// guess = "pineapple"
 
-// do {
-//     guess = prompt("Guess!")
-// } while(guess !== "pineapple")
+let guess = ""
 
-// alert("You guessed right!")
+while(guess !== "pineapple") {
+    guess = prompt("Guess!") // type in the prompt: "pineapple"
+}
 
-
-// let i = 0
-// while(i < 3) {
-//     alert("Here's a cat!")
-//     i++
-// }
-// alert("You have enough!")
+// If you're past the loop the loop condition must be false
+// After the loop is almost like the "else" of a loop
+alert("You guessed right!")
 
 
-// i = 3
-// ALERT: "Here's a cat!" "Here's a cat!" "Here's a cat"
 
-// let i = 0; runs at the beginning ONCE
-// i < 3; runs BEFORE each iteration (looping)
-// i++; runs AFTER each iteration (looping)
-// for(let i = 0; i < 3; i++) {
-//     alert("Here's a cat!")
-//     console.log(i) // 0, 1, 2
-// }
-// alert("You have enough!")
+do {
+    guess = prompt("Guess!")
+} while(guess !== "pineapple")
+
+alert("You guessed right!")
+
+
+let i = 0
+while(i < 3) {
+    alert("Here's a cat!")
+    i++
+}
+alert("You have enough!")
+
+
+i = 3
+ALERT: "Here's a cat!" "Here's a cat!" "Here's a cat"
+
+let i = 0; runs at the beginning ONCE
+i < 3; runs BEFORE each iteration (looping)
+i++; runs AFTER each iteration (looping)
+for(let i = 0; i < 3; i++) {
+    alert("Here's a cat!")
+    console.log(i) // 0, 1, 2
+}
+alert("You have enough!")
 
 // For Loop Template
 // for(let i = 0; i < NUMBER_OF_TIMES_TO_RUN; i++) {
