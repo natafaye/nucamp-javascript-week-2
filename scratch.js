@@ -47,12 +47,12 @@ while(i < 3) {
 alert("You have enough!")
 
 
-i = 3
-ALERT: "Here's a cat!" "Here's a cat!" "Here's a cat"
+// i = 3
+// ALERT: "Here's a cat!" "Here's a cat!" "Here's a cat"
 
-let i = 0; runs at the beginning ONCE
-i < 3; runs BEFORE each iteration (looping)
-i++; runs AFTER each iteration (looping)
+// let i = 0; runs at the beginning ONCE
+// i < 3; runs BEFORE each iteration (looping)
+// i++; runs AFTER each iteration (looping)
 for(let i = 0; i < 3; i++) {
     alert("Here's a cat!")
     console.log(i) // 0, 1, 2
@@ -69,16 +69,16 @@ total = 15
 i = 6
 
 let total = 0
-let i
+// let i
 
-for(i = 1; i <= 5; i++) {
+for(let i = 1; i <= 5; i++) {
    console.log(i) // 1, 2, 3, 4, 5
    console.log(total) // 0, 1, 3, 6, 10
    total += i; // total = total + i
    console.log(total) // 1, 3, 6, 10, 15
 }
 
-console.log(i) // 6
+//console.log(i) // 6
 console.log(total) // 15
 
 alert("The total is " + total)
