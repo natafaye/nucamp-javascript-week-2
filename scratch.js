@@ -1,25 +1,43 @@
-// let houseDirty = true
+// let numCats = prompt("How many cats do you have?") // "0"
 
-// while(houseDirty) {
-//     alert("Pick something up!")
-//     houseDirty = false
+// // numCats = 0
+// // CONSOLE: 
+
+// console.log(numCats) // logs: "0"
+
+// // The condition () will keep the loop looping while it's true
+// while(numCats < 3) {
+//     alert("That's so sad, you're not a cat lady")
+//     alert("Here's a cat")
+//     console.log(numCats) // log three times: 0, 1, 2
+//     numCats++ // numCats = numCats + 1
+//     console.log(numCats) // log three times: 1, 2, 3
 // }
 
-// let peopleAtHouse = prompt("How many people are at your house?")
+// // How many cats?
+// console.log(numCats) // logs: 3
 
-// for(let i = 0; i < peopleAtHouse; i++) {
-//     alert("Make a sandwich!")
+
+// // guess = "pineapple"
+
+// let guess = ""
+
+// while(guess !== "pineapple") {
+//     guess = prompt("Guess!") // type in the prompt: "pineapple"
 // }
 
-// While is good when you don't know how many times you're going to loop when you start
-// but you when to stop (or on the flip side when to keep going)
+// // If you're past the loop the loop condition must be false
+// // After the loop is almost like the "else" of a loop
+// alert("You guessed right!")
 
-// For loop is good when you know how many times when you start looping
 
-// The skill of reading code (walk through code like a computer would) is a foundational skill
 
-// i = 3
-// here's a cat, here's a cat, here's a cat, you have enough
+// do {
+//     guess = prompt("Guess!")
+// } while(guess !== "pineapple")
+
+// alert("You guessed right!")
+
 
 // let i = 0
 // while(i < 3) {
@@ -27,103 +45,115 @@
 //     i++
 // }
 // alert("You have enough!")
-// console.log(i)
+
 
 // i = 3
-// here's a cat, here's a cat, here's a cat, you have enough
+// ALERT: "Here's a cat!" "Here's a cat!" "Here's a cat"
 
+// let i = 0; runs at the beginning ONCE
+// i < 3; runs BEFORE each iteration (looping)
+// i++; runs AFTER each iteration (looping)
 // for(let i = 0; i < 3; i++) {
 //     alert("Here's a cat!")
+//     console.log(i) // 0, 1, 2
 // }
 // alert("You have enough!")
 
-
-// total = 15 (0, 1, 3, 6, 10, 15)
-// i = 6
-// 1, 2, 3, 4, 5
-
-// let total = 0
-
-// for(let i = 1; i <= 5; i++) {
-//    total += i; // total = total + i
-//    console.log(total)
+// For Loop Template
+// for(let i = 0; i < NUMBER_OF_TIMES_TO_RUN; i++) {
+//     // code to run
 // }
 
-// Should this line of code be in the loop or outside the loop?
 
-//alert("The total is " + total)
+total = 15
+i = 6
 
+let total = 0
+let i
 
-function myFunction(parameter1, parameter2) {
-    console.log(parameter1)
+for(i = 1; i <= 5; i++) {
+   console.log(i) // 1, 2, 3, 4, 5
+   console.log(total) // 0, 1, 3, 6, 10
+   total += i; // total = total + i
+   console.log(total) // 1, 3, 6, 10, 15
 }
 
-//console.log(parameter1) // ERROR
+console.log(i) // 6
+console.log(total) // 15
 
-let fruits = ["apple", "peach", "mango"]
-let prices = [1, 7, 3]
-
-
-// prices = [1, 7, 3]
-// prices.length = 3
-// total = 11
-// i = 3
-
-// let total = 0
-
-// for(let i = 0; i < prices.length; i++) {
-//     // i will be each index of the array one by one
-//     total += prices[i] // total = total + prices[i]
-// }
-
-// console.log("Your total is " + total)
+alert("The total is " + total)
 
 
 
+let racers = ["Kyle", "Dawn"]
 
-// let total = 0
+let loserWhoseASmartHead = racers[racers.length - 1]
 
-// for(let i = 0; i < prices.length; i++) {
-//     const price = prices[i] // first 1, then 7, then 3
-//     // i will be each index of the array one by one
-//     total += price// total = total + prices[i]
-// }
+let first = racers[0]
 
-// console.log("Your total is " + total)
+let last = racers[racers.length - 1]
 
+// Cheating
 
+// Overwrites
+// racers[0] = "Natalie"
 
-let sum = 0
+// console.log(racers) // ["Natalie", "Dawn"]
 
-for (const price of prices) { // price will be 1, then 7, then 3
-    // In the background, it does this for you and tracks the i: const price = prices[i]
-    sum += price// total = total + price
-}
+// Scoots everybody over
+racers.unshift("Natalie")
 
-console.log("Your total is " + sum)
-
-
-for (const price of prices) {
-    console.log(price)
-}
+// \n = the Enter key
+alert("Here are the racers: \n" + racers.join("\n  vs  \n"))
 
 
-let message = "You are buying: "
 
-for (const fruit of fruits) {
-    message += fruit + " and "
-}
-
-console.log(message)
+let fruits = ["apple", "banana", "peach"]
+fruits[1] += "pepper" // fruits[1] = fruits[1] + "pepper"
+console.log(fruits) // ["apple", "bananapepper", "peach"]
 
 
-//const random = Math.floor( Math.random() * HOW_MANY_OPTIONS  ) + LOWEST_NUMBER
+// someArray.splice(WHERE TO START, HOW MANY TO REMOVE, OPTIONALLY THINGS TO ADD)
 
+
+let outside = ['🌳', '🐶',  '❄️', '🌿']
 
 
 const addOne = (number) => {
-    number + 1
+  number + 1
 }
 
 
-addOne(5) // undefined
+console.log((number) => number + 1)
+
+// Beginner option, CANNOT do this as a professional generally speaking
+// let attractionType
+
+function buyTicket() {
+    let attractionType = "wave"
+
+    let david = "cool"
+
+    let isAllowed = checkHeight(attractionType)
+    // Starts on right hand side of an equals
+    // Puts in any variable values
+    // Simplifies any operations
+    // Calls any functions and simplifies to the return
+
+    if(isAllowed) {
+        alert("Come on in!")
+    }
+}
+
+
+function checkHeight(attraction) { // let attraction = "wave"
+    let david = "very cool"
+
+    let allowed = false
+    if(attraction === "wave") {
+        allowed = true
+    }
+    return allowed // Put in any variable values
+}
+
+// We can have two variables with the same name in different scopes/blocks/sets of curly brackets
